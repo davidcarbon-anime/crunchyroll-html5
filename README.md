@@ -1,6 +1,6 @@
 # HTML5 player for Crunchyroll
 
-[![Latest release](https://img.shields.io/github/release/YePpHa/crunchyroll-html5/all.svg)](https://github.com/YePpHa/crunchyroll-html5/releases/latest) [![Greenkeeper badge](https://badges.greenkeeper.io/YePpHa/crunchyroll-html5.svg)](https://greenkeeper.io/)
+[![Latest release](https://img.shields.io/github/release/YePpHa/crunchyroll-html5/all.svg)](https://github.com/davidcarbon-anime/crunchyroll-html5/releases/latest) [![Greenkeeper badge](https://badges.greenkeeper.io/davidcarbon-anime/crunchyroll-html5.svg)](https://greenkeeper.io/)
 
 We really don't like flash and want it killed ASAP. However, there's currently
 no HTML5 player available for Crunchyroll without having a subscription. So this
@@ -12,7 +12,7 @@ is the answer.
 - Change subtitles in the player (using libass with [JavascriptSubtitlesOctopus](https://github.com/Dador/JavascriptSubtitlesOctopus)).
 - Speed controls.
 - Auto-play the next video.
-- Shortcuts ([see list of shortcuts](https://github.com/YePpHa/crunchyroll-html5/wiki/Shortcuts))
+- Shortcuts ([see list of shortcuts](https://github.com/davidcarbon-anime/crunchyroll-html5/wiki/Shortcuts))
 
 ## Download
 Chrome extension: https://chrome.google.com/webstore/detail/crunchyroll-html5/ihegfgnkffeibpmnajnoiemkcmlbmhmi
@@ -20,7 +20,7 @@ Chrome extension: https://chrome.google.com/webstore/detail/crunchyroll-html5/ih
 Firefox addon: https://addons.mozilla.org/en-US/firefox/addon/crunchyroll-html5-unofficial/
 
 ## Screenshots
-![Preview](https://github.com/YePpHa/crunchyroll-html5/raw/master/screenshots/preview.gif)
+![Preview](https://github.com/davidcarbon-anime/crunchyroll-html5/raw/master/screenshots/preview.gif)
 
 ## Subtitle Engine
 The browser is really bad at displaying subtitles so I had to find a library
@@ -33,13 +33,13 @@ which is an [emscripten](https://github.com/kripken/emscripten) project that
 makes [libass](https://github.com/libass/libass) work in the browser with font
 support. However, I've been required to make some changes to the project to
 allow for dynamically loading the
-[default.ttf](https://github.com/YePpHa/crunchyroll-html5/blob/master/vendor/JavascriptSubtitlesOctopus/default.ttf)
+[default.ttf](https://github.com/davidcarbon-anime/crunchyroll-html5/blob/master/vendor/JavascriptSubtitlesOctopus/default.ttf)
 file and the
-[fonts.conf](https://github.com/YePpHa/crunchyroll-html5/blob/master/vendor/JavascriptSubtitlesOctopus/fonts.conf)
+[fonts.conf](https://github.com/davidcarbon-anime/crunchyroll-html5/blob/master/vendor/JavascriptSubtitlesOctopus/fonts.conf)
 file. I've also implemented a way to change the subtitle track without needing
 to restart the WebWorker that's running the engine.
 
-_All modifcations can be found [here](https://github.com/YePpHa/JavascriptSubtitlesOctopus)._
+_All modifcations can be found [here](https://github.com/davidcarbon-anime/JavascriptSubtitlesOctopus)._
 
 ## Build
 Building this project will result in a `crunchyroll-html5.user.js` file in the
@@ -109,4 +109,4 @@ $ yarn sign:webextension --key <API KEY> --secret <API SECRET> --id <ID>
 
 ## Main Libraries
 - [hls.js](https://github.com/video-dev/hls.js)
-- [JavascriptSubtitlesOctopus](https://github.com/YePpHa/JavascriptSubtitlesOctopus)
+- [JavascriptSubtitlesOctopus](https://github.com/davidcarbon-anime/JavascriptSubtitlesOctopus)
